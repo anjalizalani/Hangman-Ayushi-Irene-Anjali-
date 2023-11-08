@@ -13,8 +13,19 @@ public class  Board
   private int currentLetterValue; 
 
   /* your code here - constructor(s) */ 
+public Board(){ 
+	phrase = loadPhrase(); 
+	setLetterValue(); 
+	//System.out.println("Phrase: " + phrase); //temp test code 
+}
   
   /* your code here - accessor(s) */
+public String getSolvedPhrase(){ 
+	return solvedPhrase; 
+} 
+public int getCurrentLetterValue(){ 
+	return currentLetterValue;
+}
   
   /* your code here - mutator(s)  */
 
