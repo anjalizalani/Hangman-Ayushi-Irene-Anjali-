@@ -17,8 +17,21 @@ public class Player
     name = sc.nextLine(); 
     points = 0; 
     System.out.println("Welcome to the game " + name + "!");
+  }
+  public Player(String inputName){
+    name = inputName;points = 0;
+    System.out.println("Welcome to the game " + name + "!");
+  }
+  /* your code here - accessor(s) */
+  public String getName(){
+    return name;
+  }
+  public double getPoints(){
+    return points;
+  }
 
-  /* your code here - accessor(s) */ 
-
-  /* your code here - mutator(s) */ 
+  /* your code here - mutator(s) */
+  public void addToPoints(double inputValue){
+    points += inputValue;
+  }
 }
